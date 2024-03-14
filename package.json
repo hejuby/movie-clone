@@ -10,6 +10,7 @@
     "vercel": "vercel dev"
   },
   "devDependencies": {
+    "node-fetch": "^2.7.0",
     "sass": "^1.72.0",
     "typescript": "^5.2.2",
     "vercel": "^33.5.5",
