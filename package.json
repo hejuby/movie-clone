@@ -10,6 +10,7 @@
     "vercel": "vercel dev"
   },
   "devDependencies": {
+    "@types/node-fetch": "^2.6.11",
     "dotenv": "^16.4.5",
     "node-fetch": "^2.7.0",
     "sass": "^1.72.0",

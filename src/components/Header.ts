@@ -1,6 +1,15 @@
 import { Component } from "../core/core";
 
+interface State {
+  [key: string]: unknown
+  menus: {
+    name: string
+    href: string
+  }[]
+}
+
 export default class Header extends Component {
+  declare public state: State;
   constructor() {
     super({
       tagName: 'header',
@@ -33,7 +42,7 @@ export default class Header extends Component {
       </a>
       <nav>
         <ul>
-          ${this.state.menus.map((menu: any) => {
+          ${this.state.menus.map(menu => {
             const href = menu.href;
             const hash = location.hash.split('?')[0];
             const isActive = href === hash;

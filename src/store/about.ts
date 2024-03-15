@@ -1,6 +1,15 @@
 import { Store } from "../core/core";
 
-export default new Store({
+interface State {
+  photo: string
+  name: string
+  email: string
+  blog: string
+  github: string
+  repo: string
+}
+
+export default new Store<State>({
   photo: '/vite.svg',
   name: 'HEJUBY',
   email: 'hejuby@gmail.com',

@@ -37,7 +37,7 @@ export default class Movie extends Component {
         </div>
         <div>
           <h3>Ratings</h3>
-          ${movie.Ratings.map((rating: any) => {
+          ${movie.Ratings.map(rating => {
             return `<p>${rating.Source} - ${rating.Value}</p>`
           }).join('')}
         </div>
